@@ -1,0 +1,50 @@
+.login-card {
+	border-radius: 5px;
+	box-shadow: 0 0 4px 4px slategray;
+	margin: auto;
+	width: 50%;
+	.logo {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+		padding-top: 20px;
+	}
+
+	.input-div {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+		input {
+			width: 95%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid slategray;
+        }
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+	}
+	.alert{
+		color:red;
+		display: flex;
+		justify-content: center;
+	}
+
+	.button-div {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+        padding-bottom: 50px;
+        transition: 200ms;
+        button{
+            background-color: #4BA0EC;
+            color: snow;
+            border: none;
+            width: 95%;
+            height: 40px;
+            border-radius: 30px;         
+        }
+
+	}
+}

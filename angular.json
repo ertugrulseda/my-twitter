@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "my-twitter"
+  "defaultProject": "my-twitter",
+  "cli": {
+    "analytics": false
+  }
 }

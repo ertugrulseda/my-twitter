@@ -1,0 +1,41 @@
+.toolbar {
+	background: #17202a;
+	display: flex;
+	justify-content: space-between;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;  
+
+	.brand-logo {
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.015em;
+		margin-left: 20px;
+		color: #ffffff;
+		transition: 200ms;
+		span {
+			color:  #ffffff;
+			margin: 10px;
+		}
+		&:hover {
+            background-color: slategray;
+        }
+	}
+	.list {
+		display: flex;
+
+		.list-item {
+			list-style-type: none;
+            margin: 0px 20px;        
+            a{
+				color: #ffffff;
+			
+			}
+			&:hover {
+				background-color: slategray;
+			}
+		}
+	}
+}
