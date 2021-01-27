@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/services/login.service';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,19 +9,19 @@ import { LoginService } from 'src/app/services/login.service';
 export class ToolbarComponent implements OnInit {
 
   constructor(
-    private loginServis : LoginService
+    private authServis : AuthenticationService
   ) { }
 
   public get User(){
-    return this.loginServis.user;
+    return this.authServis.user;
   }
   get isAuthenticated() {
-    return !!this.loginServis.jwt;
+    return !!this.authServis.jwt;
   }
   
   logout(){
-    this.loginServis.user = null;
-    this.loginServis.jwt ="";
+    this.authServis.user = null;
+    this.authServis.jwt ="";
     console.log("Logout")
   }
  
