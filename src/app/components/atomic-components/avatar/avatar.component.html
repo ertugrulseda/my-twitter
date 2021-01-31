@@ -1,11 +1,6 @@
-<label for="upload-img" [class]="class">
-    <input 
-         type="file" 
-          id="upload-img" 
-          [name]="name" 
-          accept="image/*" 
-          (change)="setImage($event)">
-    <img *ngIf="srcImage" 
-          [src]="srcImage" 
-          class="image">
-</label>
+<div class="avatar">
+      <img 
+          class="avatar-img"
+          [src]="imgSrc" 
+          alt="" />
+  </div>

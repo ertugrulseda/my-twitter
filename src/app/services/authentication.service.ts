@@ -20,8 +20,8 @@ export class AuthenticationService  {
 				password: pass
 			})
 			.subscribe((data: any) => {
-        this.setUser(data)
-				this.errorMsg = '';			
+                 this.setUser(data)
+				 this.errorMsg = '';			
 			}, (err) => (this.errorMsg = err.error.data[0].messages[0].message));
 	}
 
@@ -40,9 +40,6 @@ export class AuthenticationService  {
 		this.jwt = data.jwt;
 		window.localStorage.setItem('jwt', this.jwt);
 		this.router.navigateByUrl('/home');
-		console.log('jwt' + this.jwt);
-		console.log('user auth' +  data.user.username);
+		console.log('user auth data.user ' +  data.user);
 	}
-
-
 }

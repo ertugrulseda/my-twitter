@@ -11,6 +11,8 @@
 	.ppButton {
 		border-style: none;
 		border-radius: 50%;
+		display: flex;
+		align-items: center;
 		.ppDefault {
 			display: block;
 			background-color: white;
@@ -18,7 +20,5 @@
 			height: 100px;
 			border-radius: 50%;
 		}
-    }
-    
-  
+	}
 }

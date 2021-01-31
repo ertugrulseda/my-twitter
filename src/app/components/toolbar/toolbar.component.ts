@@ -19,10 +19,14 @@ export class ToolbarComponent implements OnInit {
     return !!this.authServis.jwt;
   }
   
+  get avatarImg(){
+    
+    return this.authServis.user.profileImage ? this.authServis.user.profileImage.url : null;
+  }
+
   logout(){
     this.authServis.user = null;
     this.authServis.jwt ="";
-    console.log("Logout")
   }
  
   ngOnInit(): void {

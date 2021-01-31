@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-twit-card',
@@ -11,5 +12,9 @@ export class TwitCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  get avatarImg(){
+    
+    return '';
+  }
 }
